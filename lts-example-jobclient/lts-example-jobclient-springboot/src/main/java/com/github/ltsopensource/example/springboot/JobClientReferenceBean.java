@@ -13,6 +13,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class JobClientReferenceBean implements InitializingBean {
 
+    /**
+     * 自己的业务类,就可以这样引用了
+     */
     @Autowired
     private JobClient jobClient;
 
