@@ -11,6 +11,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>lts-example-jobclient-springboot</module>
+        <module>lts-example-jobclient-spring</module>
+        <module>lts-example-jobclient-java</module>
     </modules>
     <artifactId>lts-example-jobclient</artifactId>
 

@@ -12,6 +12,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>lts-example-jobtracker-springboot</module>
+        <module>lts-example-jobtracker-java</module>
+        <module>lts-example-jobtracker-spring</module>
     </modules>
 
     <dependencies>

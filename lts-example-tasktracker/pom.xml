@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>lts-example-tasktarcker-springboot</module>
+        <module>lts-example-tasktracker-java</module>
     </modules>
     <artifactId>lts-example-tasktracker</artifactId>
 
