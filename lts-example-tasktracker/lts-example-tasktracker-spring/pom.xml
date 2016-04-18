@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>lts-example-jobclient</artifactId>
+        <artifactId>lts-example-tasktracker</artifactId>
         <groupId>com.github.ltsopensource</groupId>
         <version>1.6.7.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lts-example-jobclient-spring</artifactId>
+    <artifactId>lts-example-tasktracker-spring</artifactId>
 
     <dependencies>
         <dependency>
