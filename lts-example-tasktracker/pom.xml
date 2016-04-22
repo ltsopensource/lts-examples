@@ -17,6 +17,8 @@
         <module>lts-example-tasktracker-spring-xml-shard</module>
         <module>lts-example-tasktracker-spring-annotation</module>
         <module>lts-example-tasktracker-springboot-shard</module>
+        <module>../lts-example-tasktrackerlts-example-tasktracker-tester</module>
+        <module>lts-example-tasktracker-tester</module>
     </modules>
     <artifactId>lts-example-tasktracker</artifactId>
 
