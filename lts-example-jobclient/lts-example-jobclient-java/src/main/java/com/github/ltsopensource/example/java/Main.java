@@ -3,7 +3,7 @@ package com.github.ltsopensource.example.java;
 import com.github.ltsopensource.core.commons.utils.DateUtils;
 import com.github.ltsopensource.core.domain.Job;
 import com.github.ltsopensource.jobclient.JobClient;
-import com.github.ltsopensource.jobclient.RetryJobClient;
+import com.github.ltsopensource.jobclient.JobClientBuilder;
 import com.github.ltsopensource.jobclient.domain.Response;
 
 import java.util.Date;
@@ -15,13 +15,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        JobClient jobClient = new RetryJobClient();
-        jobClient.setNodeGroup("test_jobClient");
-        jobClient.setClusterName("test_cluster");
-        jobClient.setRegistryAddress("zookeeper://127.0.0.1:2181");
-        jobClient.setJobCompletedHandler(new JobCompletedHandlerImpl());
-        jobClient.addConfig("job.fail.store", "mapdb");
-        jobClient.start();
+        // 方式1
+//        JobClient jobClient = new RetryJobClient();
+//        jobClient.setNodeGroup("test_jobClient");
+//        jobClient.setClusterName("test_cluster");
+//        jobClient.setRegistryAddress("zookeeper://127.0.0.1:2181");
+//        jobClient.setJobCompletedHandler(new JobCompletedHandlerImpl());
+//        jobClient.addConfig("job.fail.store", "mapdb");
+//        jobClient.start();
+
+        // 方式2
+        JobClient jobClient = new JobClientBuilder()
+                .setPropertiesConfigure("lts.properties")
+                .setJobCompletedHandler(new JobCompletedHandlerImpl())
+                .build();
 
         submitCronJob(jobClient);
         submitRepeatJob(jobClient);

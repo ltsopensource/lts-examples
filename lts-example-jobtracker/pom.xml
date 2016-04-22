@@ -5,7 +5,7 @@
     <parent>
         <artifactId>lts-examples</artifactId>
         <groupId>com.github.ltsopensource</groupId>
-        <version>1.6.7.1</version>
+        <version>1.6.8-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>lts-example-jobtracker</artifactId>
@@ -13,7 +13,8 @@
     <modules>
         <module>lts-example-jobtracker-springboot</module>
         <module>lts-example-jobtracker-java</module>
-        <module>lts-example-jobtracker-spring</module>
+        <module>lts-example-jobtracker-spring-xml</module>
+        <module>lts-example-jobtracker-spring-annotaion</module>
     </modules>
 
     <dependencies>

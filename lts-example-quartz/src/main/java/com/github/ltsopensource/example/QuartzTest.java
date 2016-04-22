@@ -10,7 +10,7 @@ import java.util.Date;
 public class QuartzTest {
 
     public void autoRun() throws InterruptedException {
-        System.out.println(DateUtils.formatYMD_HMS(new Date()) + " 我开始执行了...");
+        System.out.println(DateUtils.formatYMD_HMS(new Date()) + " 我执行了...");
     }
 
 }

@@ -70,9 +70,7 @@
     </bean>
 
     <bean class="com.github.ltsopensource.spring.quartz.QuartzLTSProxyBean">
-        <property name="clusterName" value="test_cluster"/>
-        <property name="registryAddress" value="zookeeper://127.0.0.1:2181"/>
-        <property name="nodeGroup" value="quartz_test_group"/>
+        <property name="locations" value="lts.properties"/>
     </bean>
 
 </beans>
