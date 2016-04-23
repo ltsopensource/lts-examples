@@ -30,6 +30,8 @@ public class Main {
                 .setJobCompletedHandler(new JobCompletedHandlerImpl())
                 .build();
 
+        jobClient.start();
+
         submitCronJob(jobClient);
         submitRepeatJob(jobClient);
         submitRealtimeJob(jobClient);
