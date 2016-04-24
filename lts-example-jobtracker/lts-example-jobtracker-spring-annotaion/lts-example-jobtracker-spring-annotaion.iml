@@ -19,10 +19,10 @@
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.github.ltsopensource:lts-jobtracker:1.6.8-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.github.ltsopensource:lts-core:1.6.8-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ltsopensource:lts-jobtracker:1.6.8-beta1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ltsopensource:lts-core:1.6.8-beta1" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.20.0-GA" level="project" />
-    <orderEntry type="library" name="Maven: com.github.ltsopensource:lts-spring:1.6.8-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ltsopensource:lts-spring:1.6.8-beta1" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: com.github.sgroschupf:zkclient:0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.3.3" level="project" />
