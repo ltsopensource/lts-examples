@@ -5,7 +5,7 @@
     <parent>
         <artifactId>lts-examples</artifactId>
         <groupId>com.github.ltsopensource</groupId>
-        <version>1.6.8</version>
+        <version>1.6.9</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -14,15 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.github.ltsopensource</groupId>
-            <artifactId>lts-tasktracker</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.ltsopensource</groupId>
-            <artifactId>lts-jobclient</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.ltsopensource</groupId>
-            <artifactId>lts-spring</artifactId>
+            <artifactId>lts</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.sgroschupf</groupId>
@@ -40,7 +32,10 @@
             <groupId>org.mapdb</groupId>
             <artifactId>mapdb</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
