@@ -7,7 +7,6 @@ import com.github.ltsopensource.tasktracker.Result;
 import com.github.ltsopensource.tasktracker.logger.BizLogger;
 import com.github.ltsopensource.tasktracker.runner.JobContext;
 import com.github.ltsopensource.tasktracker.runner.JobRunner;
-import com.github.ltsopensource.tasktracker.runner.LtsLoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -28,8 +27,8 @@ public class SpringAnnotationJobRunner implements JobRunner {
             springBean.hello();
 
             // TODO 业务逻辑
-            LOGGER.info("我要执行：" + jobContext);
-            BizLogger bizLogger = LtsLoggerFactory.getBizLogger();
+            LOGGER.info("我要执行：" + jobContext.getJob());
+            BizLogger bizLogger = jobContext.getBizLogger();
             // 会发送到 LTS (JobTracker上)
             bizLogger.info("测试，业务日志啊啊啊啊啊");
 
